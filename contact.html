@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>A propos de l'entreprise, Terre de Geek</title>
+  <title>Contact, Terre de Geek</title>
   <meta name="description" content="Terre de Geek est une entreprise familiale de vente de produits électroniques (téléphonie,
                                     informatique, produits dérivés etc.)">
   <meta name="auhtor" content="Batiste">
@@ -47,28 +47,58 @@
     </div>
   </header>
   <!-- Section -->
- <section>
-   <div class="title_qui_nous_sommes">
-     <h2>Qui sommes-nous ?</h2>
-   </div>
-   <div class="video_entreprise">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/EeZ2HG-KcBI" title="YouTube video player"  allow="accelerometer;
-             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-     </iframe>
-   </div>
-   <div class="description_entreprise">
-     <p>Terre de Geek est une entreprise familiale de vente de produits électronique(téléphonie, informatique, produits dérivés, etc.)
-        Elle détient à l'heure actuelle 40% du marché en Normandie. Elle est notamment présente à Dieppe, Forge-les-eaux, Louviers et Alençon.<br>
-        Quel est l'ADN de Terre De Geek ? <br>
-        L'entreprise est née d'une volonté, proposer du matériel et des produits dérivés de qualité dans un cadre jeune et dynamique.<br>
-        Nous prenons en charge l’intégralité de votre réseau informatique : la gestion de vos serveurs et postes, l'installation de nouveaux matériels,
-        l’assistance aux utilisateurs, les dépannages urgents, la sécurité réseau, la maintenance à distance, le conseil, l’audit, la réparation pc,
-        le développement de sites web, etc...<br>
-        En cas de besoin spécifique nous mettons en place une solution dédiée. Notre expérience vous apporte L’évolution et le développement de nouveaux
-        services, de l’ajout de fonctionnalités au développement de nouvelles applications ou nouveaux équipements.
-     </p>
-   </div>
- </section>
+  <div class="title_formulaire">
+   <h2>Formulaire de contact</h2>
+  </div>
+  <form class="formulaire_contact">
+    <div class="enteryourname">
+      <label for="firstname">Votre Nom:</label>
+      <input type="text" name="firstname" id="firstname" minlength="2" maxlength="40" required placeholder="ex:Dupont">
+    </div>
+    <div class="lastname">
+      <label for="lastname">Votre Prénom</label>
+      <input type="text" name="lastname" id="lastname" minlength="2" maxlength="40" required placeholder="ex:Pierre">
+    </div>
+    <div class="mobilephone">
+      <label for="mobilephone">Votre Numéro de Téléphone</label>
+      <input type="tel" name="mobilephone" id="mobilephone"  required placeholder="07-98-78-59-64">
+    </div>
+    <div class="emailadress">
+      <label for="emailadress">Votre email:</label>
+      <input type="email" name="emailadress" id="emailadress" required placeholder="contact@demo.fr">
+    </div>
+    <div class="age">
+      <label for="age">Votre âge</label>
+      <input type="number" name="age" id="age" required>
+    </div>
+    <div class="object_message">
+      <label for="object_select">L'objet de votre message</label>
+      <select name="object_select" id="object_select" required>
+        <option value="">--Choisissez l'objet--</option>
+        <option value="information">Information</option>
+        <option value="réclamation">Réclamation</option>
+        <option value="partenariat">Partenariat</option>
+        <option value="autres">Autres</option>
+      </select>
+    </div>
+    <div class="user_message">
+      <label for="user_message"></label>
+      <textarea name="user_message" id="user_message" cols="45" rows="5" placeholder="Votre message...." required></textarea>
+    </div>
+    <div class="submit_message">
+      <input type="submit" value="Envoyer">
+    </div>
+    <div class="reset">
+      <input type="reset" value="Annuler">
+    </div>
+  </form>
+  <div class="image_maps_terredegeek">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2616.186469861133!2d1.144573415094425!3d49.
+                02606039684117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e1475b4fda5547%3A0x301393852094ad6b!
+                2s21%20Rue%20du%20Dr%20Oursel%2C%2027000%20%C3%89vreux!5e0!3m2!1sfr!2sfr!4v1616664770226!5m2!1sfr!2sfr"
+                width="1200" height="350" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
  <!-- Footer -->
   <footer>
     <div class="adress_entreprise">
