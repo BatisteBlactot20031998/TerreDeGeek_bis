@@ -17,8 +17,11 @@
   <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,7 +30,7 @@
 
   <!-- Mon site -->
   <!-- Header -->
-  <header>
+  <header class="header">
     <div class="main_title">
       <h1>Terre De Geek</h1>
     </div>
@@ -37,6 +40,8 @@
     <div class="menu_nav">
   <!-- Menu Nav -->
       <nav>
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" visibility: hidden/>
         <ul>
           <li><a href="../index.html">Accueil</a></li>
           <li><a href="../a_propos_de_l'entreprise.html">A Propos de l'entreprise</a></li>
@@ -55,7 +60,7 @@
       <img src="../img/produit3.jpeg" alt="MSI" width="196" height="196">
     </div>
     <div class="description_productsheet3">
-      <h3>Moniteur</h3>
+      <h3 class="moniteur">Moniteur</h3>
       <ul>
         <li>Taille de l'écran: 17.3 pouces</li>
         <li>Equivalence: 43.9 cm</li>
@@ -69,30 +74,30 @@
         <li>Webcam intégrée: Oui</li>
         <li>Microphone intégré: Oui</li>
       </ul>
-      <h3>Logiciels</h3>
+      <h3 class="logiciels">Logiciels</h3>
       <ul>
         <li>Système d'exploitation: Windows 10</li>
         <li>Suite logicielle: Lenovo</li>
         <li>Antivirus: McAfee LiveSafe</li>
         <li>Microsoft Office: Microsoft 365</li>
       </ul>
-      <h3>Processeur</h3>
+      <h3 class="processeur">Processeur</h3>
       <ul>
         <li>Fréquence en Hz: 5</li>
       </ul>
-      <h3>Carte vidéo</h3>
+      <h3 class="carte_vidéo">Carte vidéo</h3>
       <ul>
         <li>Carte: NVDIA GeForce RTX2060 avec 6 Go</li>
         <li>Contrôleur graphique: Intel HD Graphics</li>
         <li>Compatible VR: HTC VIVE et Windows Mixed Reality</li>
         <li>Type de carte: Nvidia GeForce RTX</li>
       </ul>
-      <h3>Mémoire vive</h3>
+      <h3 class="mémoire_vive">Mémoire vive</h3>
       <ul>
         <li>Capacité totale: 8 Go</li>
         <li>Type: DDR4</li>
       </ul>
-      <h3>Stockage</h3>
+      <h3 class="stockage">Stockage</h3>
       <ul>
         <li>Capacité du disque dur: 1000.0 Go</li>
         <li>Capacité du SSD: 512.0 Go</li>

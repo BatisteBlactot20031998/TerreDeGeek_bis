@@ -19,6 +19,9 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,7 +30,7 @@
 
   <!-- Mon site -->
   <!-- Header -->
-  <header>
+  <header class="header">
     <div class="main_title">
       <h1>Terre De Geek</h1>
     </div>
@@ -37,6 +40,8 @@
     <div class="menu_nav">
   <!-- Menu Nav -->
       <nav>
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" visibility: hidden/>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="a_propos_de_l'entreprise.html">A Propos de l'entreprise</a></li>
@@ -52,23 +57,23 @@
   </div>
   <form class="formulaire_contact">
     <div class="enteryourname">
-      <label for="firstname">Votre Nom:</label>
+      <label for="firstname">Votre Nom:</label><br>
       <input type="text" name="firstname" id="firstname" minlength="2" maxlength="40" required placeholder="ex:Dupont">
     </div>
     <div class="lastname">
-      <label for="lastname">Votre Prénom</label>
+      <label for="lastname">Votre Prénom</label><br>
       <input type="text" name="lastname" id="lastname" minlength="2" maxlength="40" required placeholder="ex:Pierre">
     </div>
     <div class="mobilephone">
-      <label for="mobilephone">Votre Numéro de Téléphone</label>
+      <label for="mobilephone">Votre Numéro de Téléphone</label><br>
       <input type="tel" name="mobilephone" id="mobilephone"  required placeholder="07-98-78-59-64">
     </div>
     <div class="emailadress">
-      <label for="emailadress">Votre email:</label>
+      <label for="emailadress">Votre email:</label><br>
       <input type="email" name="emailadress" id="emailadress" required placeholder="contact@demo.fr">
     </div>
     <div class="age">
-      <label for="age">Votre âge</label>
+      <label for="age">Votre âge</label><br>
       <input type="number" name="age" id="age" required>
     </div>
     <div class="object_message">
@@ -83,13 +88,15 @@
     </div>
     <div class="user_message">
       <label for="user_message"></label>
-      <textarea name="user_message" id="user_message" cols="45" rows="5" placeholder="Votre message...." required></textarea>
+      <textarea name="user_message" id="user_message" cols="30" rows="5" placeholder="Votre message...." required></textarea>
     </div>
-    <div class="submit_message">
-      <input type="submit" value="Envoyer">
-    </div>
-    <div class="reset">
-      <input type="reset" value="Annuler">
+    <div class="submit_reset">
+      <div class="submit_message">
+        <input type="submit" value="Envoyer">
+      </div>
+      <div class="reset">
+        <input type="reset" value="Annuler">
+      </div>
     </div>
   </form>
   <div class="image_maps_terredegeek">
