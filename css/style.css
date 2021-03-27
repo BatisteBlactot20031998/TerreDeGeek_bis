@@ -495,3 +495,74 @@ footer{
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+/*                            CSS Media Query
+---------------------------------------------------------------------*/
+@media only screen and (min-width: 375px){
+  .video_entreprise iframe{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
+  .formulaire_contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .video_entreprise iframe {
+    width: 100%;
+    height: 50vh;
+  }
+  .table_prestations{
+    width: 100%;
+    height: 55vh;
+  }
+  .table_prestations table{
+    width: 100%;
+    height: 55vh;
+  }
+}
+
+@media only screen and (min-width: 1350px){
+  .banner{
+    text-align: center;
+  }
+  .banner img{
+    width: 50%;
+    height: auto;
+  }
+  .image_product1 img {
+    width: 20%;
+    height: auto;
+  }
+  .image_product2 img {
+    width: 20%;
+    height: auto;
+  }
+  .image_product3 img {
+    width: 20%;
+    height: auto;
+  }
+  .video_entreprise{
+    text-align: center;
+  }
+  .video_entreprise iframe {
+    width: 50%;
+    height: 50vh;
+  }
+  .image_productsheet1 img {
+    width: 10%;
+    height: auto;
+  }
+  .image_productsheet2 img {
+    width: 15%;
+    height: auto;
+  }
+  .image_productsheet3 img {
+    width: 15%;
+    height: auto;
+  }
+}
